@@ -1,0 +1,44 @@
+---
+const personalImageAlt = "Mauro Bringas";
+---
+
+<article
+  class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row"
+>
+  <div
+    class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
+  >
+    <p>
+      My name is Mauro but my friends call me nifu. I started in the programming
+      when i was 17 years old. Now I'm recent gratuate and <strong>
+        focus on developing mobile apps using the best practices and agile
+        methodologies.
+      </strong>
+    </p>
+
+    <p>
+      I have experience <strong>
+        collaborating with my team to create a RESTful Web App that helps users
+        find someone to take care of their pets or find new job opportunities
+        they can do from home.
+      </strong>
+    </p>
+
+    <p>
+      I have experience developing cross-platform mobile applications and <strong
+      >
+        a strong ability to learn new tools and frameworks quickly.</strong
+      >My goal is to improve optimization and user experience worldwide,
+      allowing users to make the most of technology through their smartphones.
+    </p>
+  </div>
+
+  <img
+    width="200"
+    height="200"
+    src="me.jpeg"
+    alt={personalImageAlt}
+    class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
+    style="object-position: 50% 50%"
+  />
+</article>
