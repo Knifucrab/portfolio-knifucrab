@@ -7,6 +7,8 @@ import Express from "./icons/Express.astro";
 import MongoDB from "./icons/MongoDB.astro";
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
+import Expo from "./icons/Expo.astro";
+import Vercel from "./icons/Vercel.astro";
 
 const TAGS = {
   NEXT: {
@@ -34,8 +36,32 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  EXPO: {
+    name: "Expo",
+    class: "bg-[#003159] text-white",
+    icon: Expo,
+  },
+  REACT_NATIVE: {
+    name: "React Native",
+    class: "bg-[#003159] text-white",
+    icon: React,
+  },
+  VERCEL: {
+    name: "Vercel",
+  },
 };
 const PROJECTS = [
+  {
+    title: "Outfy - Outfits Social Media App",
+    description:
+      "Created for everyone who is appasionated for the clothes and the styling being able to share his outfits. Created from scratch using React Native, Expo, Express and MongoDB",
+    // link: "https://petsion.com.ar"
+
+    github: "https://github.com/Knifucrab/outfy-app",
+    image: "https://youtube.com/embed/LPcqCf6J4gw?si=FKRtI5K1bokXGGMF",
+
+    tags: [TAGS.REACT_NATIVE, TAGS.EXPO, TAGS.EXPRESS, TAGS.MONGODB],
+  },
   {
     title: "Petsion - Petcare app",
     description:
@@ -43,6 +69,7 @@ const PROJECTS = [
     link: "https://petsion.com.ar",
     github: "https://github.com/JVolkK/Petsion",
     image: "/projects/petsion.webp",
+
     tags: [TAGS.REACT, TAGS.EXPRESS, TAGS.MONGODB],
   },
 ];
@@ -50,16 +77,28 @@ const PROJECTS = [
 
 <div class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    PROJECTS.map(({image, title, description, tags, link, github}) => (
       <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
         <div class="w-full md:w-1/2">
           <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-            <img
-              alt="Recién llegado vs 5 años en Nueva Zelanda"
-              class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
-              loading="lazy"
-              src={image}
-            />
+            {image.includes("youtube.com") ? (
+              <iframe
+                width="100%"
+                height="315"
+                src={image}
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              />
+            ) : (
+              <img
+                alt={title}
+                class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+                loading="lazy"
+                src={image}
+              />
+            )}
           </div>
         </div>
 
