@@ -12,6 +12,8 @@ import ldt1 from '../assets/projects/ldt1.webp';
 import ldt2 from '../assets/projects/ldt2.webp';
 import ldt3 from '../assets/projects/ldt3.webp';
 import ldt4 from '../assets/projects/ldt4.webp';
+import zento1 from '../assets/projects/zento1.webp';
+import zento2 from '../assets/projects/zento2.webp';
 
 export const HERO_CONTENT = `React Native Mobile Developer. Software & Quality Development Technician from Tucuman, Argentina 🇦🇷. Specialized in the development of multiplatform mobile aplications.`;
 
@@ -50,7 +52,30 @@ export const EXPERIENCES = [
 
 export const REACT_NATIVE_PROJECTS = [
   {
-    title: 'Outfy App',
+    title: 'Zento - Money Manager App',
+    githubLink: 'https://github.com/Knifucrab/zento-app',
+    figmaLink:
+      'https://www.figma.com/design/0LZABrv6gQqOyyO9pZUvss/Zento?node-id=0-1&m=dev&t=y3twHhQoNC8RIdHe-1',
+    media: [
+      { type: 'image', src: zento1 },
+      { type: 'image', src: zento2 },
+      // { type: 'video', src: 'https://www.youtube.com/embed/exampleVideoID' },
+    ],
+    description:
+      'Personal finance app built from scratch to help users track their expenses, incomes, and debts through a clean and intuitive UI. Developed without Expo using React Native CLI, TypeScript, and Redux, with offline data storage via AsyncStorage and rich animations powered by Lottie. Includes light in-app monetization using AdMob.The app is planned to be published on Google Play Store and Apple App Store in Q3 2025.',
+    technologies: [
+      'React Native CLI',
+      'Typescript',
+      'AsyncStorage',
+      'AdMob',
+      'Lottie',
+      'Redux',
+      'React Navigation',
+      'Tamagui UI',
+    ],
+  },
+  {
+    title: 'Outfy App - Social Media for Outfits',
     githubLink: 'https://github.com/Knifucrab/outfy-app',
     media: [
       {
@@ -89,7 +114,9 @@ export const REACT_PROJECTS = [
   },
   {
     title: 'Church Vision Apostolica Lomas de Tafí',
-    previewLink: 'https://www.visionapostolicaldt.org',
+    previewLink: 'https://visionapostolicaldt.vercel.app/',
+    figmaLink:
+      'https://www.figma.com/proto/GQ8kXvJTgXvUoPIx0ZutYj/Iglesia-Vision-Apostolica-Landing?node-id=0-1&t=kjQso6ke1JkWD8rZ-1',
     media: [
       { type: 'image', src: ldt1 },
       { type: 'image', src: ldt2 },

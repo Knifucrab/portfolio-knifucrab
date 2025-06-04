@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'; // Import React Icons
+import { FaGithub, FaExternalLinkAlt, FaFigma } from 'react-icons/fa'; // Import React Icons
 
 const Projects = ({ PROJECTS, Title }) => {
   const [currentIndexes, setCurrentIndexes] = useState(
@@ -106,6 +106,16 @@ const Projects = ({ PROJECTS, Title }) => {
                     className="flex items-center bg-stone-900 text-white px-4 py-2 rounded-lg hover:bg-stone-700 transition"
                   >
                     <FaExternalLinkAlt className="mr-2" /> Preview
+                  </a>
+                )}
+                {project.figmaLink && (
+                  <a
+                    href={project.figmaLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center bg-stone-900 text-white px-4 py-2 rounded-lg hover:bg-stone-700 transition"
+                  >
+                    <FaFigma className="mr-2" /> Figma Design
                   </a>
                 )}
               </div>

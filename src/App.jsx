@@ -21,11 +21,11 @@ const App = () => {
         <Navbar />
         <Hero />
         <Technologies />
-        <Projects PROJECTS={REACT_PROJECTS} Title={'React Projects'} />
         <Projects
           PROJECTS={REACT_NATIVE_PROJECTS}
           Title={'React Native Projects'}
         />
+        <Projects PROJECTS={REACT_PROJECTS} Title={'React Projects'} />
         <Experience />
         <Contact />
       </div>
