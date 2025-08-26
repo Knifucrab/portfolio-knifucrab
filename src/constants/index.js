@@ -97,7 +97,7 @@ export const REACT_PROJECTS = [
   {
     title: 'Petsion - Petcare App',
     githubLink: 'https://github.com/JVolkK/Petsion',
-    previewLink: 'https://www.petsion.com.ar',
+    previewLink: 'https://petsion-front.vercel.app',
     media: [
       { type: 'image', src: petsion2 },
       { type: 'image', src: petsion3 },
