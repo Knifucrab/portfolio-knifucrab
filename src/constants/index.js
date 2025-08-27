@@ -14,6 +14,10 @@ import ldt3 from '../assets/projects/ldt3.webp';
 import ldt4 from '../assets/projects/ldt4.webp';
 import zento1 from '../assets/projects/zento1.webp';
 import zento2 from '../assets/projects/zento2.webp';
+import flights_1 from '../assets/projects/flights_1.webp';
+import flights_2 from '../assets/projects/flights_2.webp';
+import flights_3 from '../assets/projects/flights_3.webp';
+import flights_4 from '../assets/projects/flights_4.webp';
 
 export const HERO_CONTENT = `React Native Mobile Developer. Software & Quality Development Technician from Tucuman, Argentina 🇦🇷. Specialized in the development of multiplatform mobile aplications.`;
 
@@ -93,11 +97,14 @@ export const REACT_NATIVE_PROJECTS = [
   },
 ];
 
-export const REACT_PROJECTS = [
+export const REACT_EXPERIENCE = [
   {
     title: 'Petsion - Petcare App',
     githubLink: 'https://github.com/JVolkK/Petsion',
-    previewLink: 'https://petsion-front.vercel.app',
+    previewLink: 'https://www.petsion.com.ar',
+    year: 'March 2024 - August 2024',
+    role: 'Front End Developer',
+    company: 'Petsion',
     media: [
       { type: 'image', src: petsion2 },
       { type: 'image', src: petsion3 },
@@ -115,6 +122,9 @@ export const REACT_PROJECTS = [
   {
     title: 'Church Vision Apostolica Lomas de Tafí',
     previewLink: 'https://visionapostolicaldt.vercel.app/',
+    year: 'May 2025 - June 2025',
+    role: 'Front End Developer',
+    company: 'Iglesia Vision Apostolica Lomas de Tafí',
     figmaLink:
       'https://www.figma.com/proto/GQ8kXvJTgXvUoPIx0ZutYj/Iglesia-Vision-Apostolica-Landing?node-id=0-1&t=kjQso6ke1JkWD8rZ-1',
     media: [
@@ -128,6 +138,24 @@ export const REACT_PROJECTS = [
     description:
       'Allow everyone to be a pet sitter or hire a pet sitter. Enabling over 100 users to manage their services. +500 pets loaded. Created from cero using React, Express and MongoDB.',
     technologies: ['HTML', 'CSS', 'React', 'MongoDB', 'Redux'],
+  },
+];
+
+export const REACT_PROJECTS = [
+  {
+    title: 'Google Flights Clone',
+    previewLink: 'https://google-flights-clone-olive.vercel.app',
+    company: 'Freelance',
+    media: [
+      { type: 'image', src: flights_1 },
+      { type: 'image', src: flights_2 },
+      { type: 'image', src: flights_3 },
+      { type: 'image', src: flights_4 },
+      // { type: 'video', src: 'https://www.youtube.com/embed/exampleVideoID' },
+    ],
+    description:
+      'A full-featured flight search and reservation web app inspired by Google Flights. Integrates with a public flights API to provide real-time flight data, booking capabilities, and personalized recommendations. Includes advanced filtering options to help users find the best deals and save money on flights, as well as suggestions for alternative dates and routes.',
+    technologies: ['HTML', 'CSS', 'React', 'MongoDB', 'Redux', 'REST'],
   },
 ];
 

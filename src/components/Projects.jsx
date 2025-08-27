@@ -1,11 +1,7 @@
 import { useState } from 'react';
 import { FaGithub, FaExternalLinkAlt, FaFigma } from 'react-icons/fa'; // Import React Icons
 
-<<<<<<< HEAD
-const Projects = ({ PROJECTS, Title }) => {
-=======
 const Projects = ({ PROJECTS, Title, showYear = false }) => {
->>>>>>> main
   const [currentIndexes, setCurrentIndexes] = useState(
     PROJECTS.map(() => 0) // Initialize an array of indexes for each project
   );
@@ -43,44 +39,6 @@ const Projects = ({ PROJECTS, Title, showYear = false }) => {
             key={projectIndex}
             className="mb-8 flex flex-wrap lg:justify-center"
           >
-<<<<<<< HEAD
-            <div className="w-full lg:w-1/2 relative flex justify-center items-center">
-              {project.media[currentIndexes[projectIndex]].type === 'image' ? (
-                <img
-                  src={project.media[currentIndexes[projectIndex]].src}
-                  alt={project.title}
-                  className={`mb-6 rounded ${
-                    Title === 'React Native Projects'
-                      ? 'h-[600px] object-cover'
-                      : ''
-                  }`}
-                />
-              ) : (
-                <iframe
-                  height="600"
-                  src={project.media[currentIndexes[projectIndex]].src}
-                  title={project.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="mb-6 rounded"
-                ></iframe>
-              )}
-              <button
-                onClick={() => handlePrev(projectIndex)}
-                className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-stone-900 text-white p-4 rounded-2xl"
-              >
-                &#8592;
-              </button>
-              <button
-                onClick={() => handleNext(projectIndex)}
-                className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-stone-900 text-white p-4 rounded-2xl"
-              >
-                &#8594;
-              </button>
-            </div>
-            <div className="w-full max-w-xl lg:w-3/4 lg:ml-5">
-              <h3 className="mb-2 font-semibold text-2xl">{project.title}</h3>
-=======
             <div className="w-full lg:w-1/2 flex justify-center items-center">
               <div
                 className={`relative flex items-center ${
@@ -95,8 +53,7 @@ const Projects = ({ PROJECTS, Title, showYear = false }) => {
                     &#8592;
                   </button>
                 )}
-                {project.media[currentIndexes[projectIndex]].type ===
-                'image' ? (
+                {project.media[currentIndexes[projectIndex]].type === 'image' ? (
                   <img
                     src={project.media[currentIndexes[projectIndex]].src}
                     alt={project.title}
@@ -119,7 +76,7 @@ const Projects = ({ PROJECTS, Title, showYear = false }) => {
                 {Title === 'React Native Projects' && (
                   <button
                     onClick={() => handleNext(projectIndex)}
-                    className="absolute -right-10 top-1/2 -translate-y-1/2 bg-stone-900 text-white p-4 rounded-2xl z-10"
+                    className="absolute -right-8 top-1/2 -translate-y-1/2 bg-stone-900 text-white p-4 rounded-2xl z-10"
                   >
                     &#8594;
                   </button>
@@ -155,7 +112,6 @@ const Projects = ({ PROJECTS, Title, showYear = false }) => {
                   </h3>
                 </div>
               )}
->>>>>>> main
               <p className="mb-4 text-stone-400">{project.description}</p>
               <div className="flex flex-wrap">
                 {project.technologies.map((tech, index) => (
