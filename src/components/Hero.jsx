@@ -27,7 +27,7 @@ const Hero = () => {
               {HERO_CONTENT}
             </p>
             <a
-              href="/resume_mauro_bringas.pdf"
+              href="/Mauro_Bringas_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download
