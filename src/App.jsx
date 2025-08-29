@@ -21,21 +21,21 @@ const App = () => {
       <div className="container mx-auto px-8">
         <Navbar />
         <Hero />
-        <Technologies />
-        <Projects
+
+        <Experience />
+        {/* <Projects
           PROJECTS={REACT_EXPERIENCE}
           Title={'React Experience'}
           showYear
-        />
+        /> */}
         <Projects
           PROJECTS={REACT_NATIVE_PROJECTS}
           Title={'React Native Projects'}
         />
-        {/* <Experience /> */}
         <Projects PROJECTS={REACT_PROJECTS} Title={'React Projects'} />
       </div>
     </div>
   );
-}
+};
 
 export default App;

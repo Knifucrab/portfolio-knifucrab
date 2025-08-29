@@ -25,6 +25,35 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
   {
+    year: 'March 2025 - April 2025 (1 month)',
+    role: 'React Frontend Developer',
+    company: 'Church Vision Apostolica',
+    description: `Designed and developed a responsive one-page website for a local church to showcase their beliefs, events, and image gallery.`,
+    technologies: [
+      'React',
+      'Ant Design',
+      'Figma',
+      'Vercel',
+      'Google Cloud Services',
+    ],
+  },
+  {
+    year: 'August 2024 - January 2025 (6 months)',
+    role: 'Front End Engineering Intern',
+    company: 'Solid',
+    description: `Collaborated in a team project as part of my final university coursework, with professors from multinational companies acting as real-world clients.`,
+    technologies: [
+      'React',
+      'Typescript',
+      'Next.js',
+      'GitHub Actions',
+      'Material UI (MUI)',
+      'Recharts',
+      'Axios',
+      'Cypress',
+    ],
+  },
+  {
     year: 'March 2024 - August 2024 (6 months)',
     role: 'Front End Developer',
     company: 'Petsion (Final University Project)',
@@ -37,19 +66,6 @@ export const EXPERIENCES = [
       'Express',
       'SCRUM',
       'REST API',
-    ],
-  },
-  {
-    year: 'August 2024 - Present',
-    role: 'Freelance Frontend Developer',
-    company: 'Church Vision Apostolica - Lomas de Tafí',
-    description: `Designed and developed a responsive one-page website for a local church to showcase their beliefs, events, and image gallery.`,
-    technologies: [
-      'React',
-      'Ant Design',
-      'Figma',
-      'Vercel',
-      'Google Cloud Services',
     ],
   },
 ];
