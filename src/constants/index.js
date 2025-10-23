@@ -18,6 +18,9 @@ import flights_1 from '../assets/projects/flights_1.webp';
 import flights_2 from '../assets/projects/flights_2.webp';
 import flights_3 from '../assets/projects/flights_3.webp';
 import flights_4 from '../assets/projects/flights_4.webp';
+import lunaro_1 from '../assets/projects/lunaro_wallet_1.webp';
+import lunaro_2 from '../assets/projects/lunaro_wallet_2.webp';
+import lunaro_3 from '../assets/projects/lunaro_wallet_3.webp';
 
 export const HERO_CONTENT = `React Native Mobile Developer. Software & Quality Development Technician from Tucuman, Argentina 🇦🇷. Specialized in the development of multiplatform mobile aplications.`;
 
@@ -173,9 +176,22 @@ export const REACT_PROJECTS = [
       'A full-featured flight search and reservation web app inspired by Google Flights. Integrates with a public flights API to provide real-time flight data, booking capabilities, and personalized recommendations. Includes advanced filtering options to help users find the best deals and save money on flights, as well as suggestions for alternative dates and routes.',
     technologies: ['HTML', 'CSS', 'React', 'MongoDB', 'Redux', 'REST'],
   },
+  {
+    title: 'Lunaro Wallet - Crypto Wallet App',
+    previewLink: 'https://lunaro-wallet.vercel.app',
+    company: 'Freelance',
+    media: [
+      { type: 'image', src: lunaro_1 },
+      { type: 'image', src: lunaro_2 },
+      { type: 'image', src: lunaro_3 },
+    ],
+    description:
+      'A full-featured crypto wallet app that allows users to securely store, manage, and trade their cryptocurrencies. Integrates etherscan API to provide real-time market data, transaction history, and portfolio tracking. Includes coingecko API to provide users with up-to-date information on cryptocurrency prices, market trends, and news. Also wallet charts to visualize portfolio performance over time.',
+    technologies: ['TypeScript', 'React', 'Material UI', 'RainbowKit', 'Wagmi'],
+  },
 ];
 
 export const CONTACT = {
-  phoneNo: '+54 381 5904854 ',
   email: 'maurosbringas@gmail.com',
+  phoneNo: '+54 9 3815904854',
 };
