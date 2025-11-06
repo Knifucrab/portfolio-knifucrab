@@ -1,10 +1,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Technologies from './components/Technologies';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
-import Contact from './components/Contact';
-import { REACT_EXPERIENCE } from './constants';
 import { REACT_PROJECTS } from './constants';
 import { REACT_NATIVE_PROJECTS } from './constants';
 
@@ -23,11 +20,7 @@ const App = () => {
         <Hero />
 
         <Experience />
-        {/* <Projects
-          PROJECTS={REACT_EXPERIENCE}
-          Title={'React Experience'}
-          showYear
-        /> */}
+
         <Projects
           PROJECTS={REACT_NATIVE_PROJECTS}
           Title={'React Native Projects'}

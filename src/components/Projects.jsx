@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { FaGithub, FaExternalLinkAlt, FaFigma } from 'react-icons/fa'; // Import React Icons
 
-const Projects = ({ PROJECTS, Title, showYear = false }) => {
+const Projects = ({ PROJECTS = [], Title, showYear = false }) => {
   const [currentIndexes, setCurrentIndexes] = useState(
-    PROJECTS.map(() => 0) // Initialize an array of indexes for each project
+    () => PROJECTS.map(() => 0) // Initialize an array of indexes for each project
   );
 
   const handlePrev = (projectIndex) => {
@@ -114,7 +114,7 @@ const Projects = ({ PROJECTS, Title, showYear = false }) => {
               )}
               <p className="mb-4 text-stone-400">{project.description}</p>
               <div className="flex flex-wrap">
-                {project.technologies.map((tech, index) => (
+                {(project.technologies || []).map((tech, index) => (
                   <span
                     className="mr-2 mb-2 rounded bg-stone-900 p-2 text-sm font-medium text-stone-300"
                     key={index}

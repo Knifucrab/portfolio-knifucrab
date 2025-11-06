@@ -21,12 +21,25 @@ import flights_4 from '../assets/projects/flights_4.webp';
 import lunaro_1 from '../assets/projects/lunaro_wallet_1.webp';
 import lunaro_2 from '../assets/projects/lunaro_wallet_2.webp';
 import lunaro_3 from '../assets/projects/lunaro_wallet_3.webp';
+import aizora_1 from '../assets/projects/aizora_1.png';
+import aizora_2 from '../assets/projects/aizora_2.png';
+import aizora_3 from '../assets/projects/aizora_3.png';
+import aizora_4 from '../assets/projects/aizora_4.png';
+import aizora_5 from '../assets/projects/aizora_5.png';
+import aizora_6 from '../assets/projects/aizora_6.png';
 
 export const HERO_CONTENT = `React Native Mobile Developer. Software & Quality Development Technician from Tucuman, Argentina 🇦🇷. Specialized in the development of multiplatform mobile aplications.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
 export const EXPERIENCES = [
+  {
+    year: 'August 2025 - Present',
+    role: 'Full-Stack Developer (Automation-Focused)',
+    company: 'Aizora',
+    description: `Developing automation-driven web solutions to enhance business workflows and customer interactions. Built custom frontends connected to n8n workflows and third-party APIs to streamline operations and integrate AI-powered services.`,
+    technologies: ['N8N', 'React', 'Node.js', 'Vercel', 'REST APIs'],
+  },
   {
     year: 'March 2025 - April 2025 (1 month)',
     role: 'React Frontend Developer',
@@ -116,7 +129,7 @@ export const REACT_NATIVE_PROJECTS = [
   },
 ];
 
-export const REACT_EXPERIENCE = [
+export const REACT_PROJECTS = [
   {
     title: 'Petsion - Petcare App',
     githubLink: 'https://github.com/JVolkK/Petsion',
@@ -139,6 +152,23 @@ export const REACT_EXPERIENCE = [
     technologies: ['HTML', 'CSS', 'React', 'MongoDB', 'Redux'],
   },
   {
+    title: 'Aizora - IA Automation Software Service',
+    githubLink: 'https://github.com/Knifucrab/aizora-web',
+    previewLink: 'https://www.aizora.io',
+    year: 'August 2025 - Present',
+    role: 'Full-Stack Developer (Automation-Focused)',
+    company: 'Aizora',
+    media: [
+      { type: 'image', src: aizora_1 },
+      { type: 'image', src: aizora_2 },
+      { type: 'image', src: aizora_3 },
+      { type: 'image', src: aizora_4 },
+      { type: 'image', src: aizora_5 },
+      { type: 'image', src: aizora_6 },
+      // { type: 'video', src: 'https://www.youtube.com/embed/exampleVideoID' },
+    ],
+  },
+  {
     title: 'Church Vision Apostolica Lomas de Tafí',
     previewLink: 'https://visionapostolicaldt.vercel.app/',
     year: 'May 2025 - June 2025',
@@ -154,13 +184,20 @@ export const REACT_EXPERIENCE = [
 
       // { type: 'video', src: 'https://www.youtube.com/embed/exampleVideoID' },
     ],
-    description:
-      'Allow everyone to be a pet sitter or hire a pet sitter. Enabling over 100 users to manage their services. +500 pets loaded. Created from cero using React, Express and MongoDB.',
-    technologies: ['HTML', 'CSS', 'React', 'MongoDB', 'Redux'],
   },
-];
-
-export const REACT_PROJECTS = [
+  {
+    title: 'Lunaro Wallet - Crypto Wallet App',
+    previewLink: 'https://lunaro-wallet.vercel.app',
+    company: 'Freelance',
+    media: [
+      { type: 'image', src: lunaro_1 },
+      { type: 'image', src: lunaro_2 },
+      { type: 'image', src: lunaro_3 },
+    ],
+    description:
+      'A full-featured crypto wallet app that allows users to securely store, manage, and trade their cryptocurrencies. Integrates etherscan API to provide real-time market data, transaction history, and portfolio tracking. Includes coingecko API to provide users with up-to-date information on cryptocurrency prices, market trends, and news. Also wallet charts to visualize portfolio performance over time.',
+    technologies: ['TypeScript', 'React', 'Material UI', 'RainbowKit', 'Wagmi'],
+  },
   {
     title: 'Google Flights Clone',
     previewLink: 'https://google-flights-clone-olive.vercel.app',
@@ -175,19 +212,6 @@ export const REACT_PROJECTS = [
     description:
       'A full-featured flight search and reservation web app inspired by Google Flights. Integrates with a public flights API to provide real-time flight data, booking capabilities, and personalized recommendations. Includes advanced filtering options to help users find the best deals and save money on flights, as well as suggestions for alternative dates and routes.',
     technologies: ['HTML', 'CSS', 'React', 'MongoDB', 'Redux', 'REST'],
-  },
-  {
-    title: 'Lunaro Wallet - Crypto Wallet App',
-    previewLink: 'https://lunaro-wallet.vercel.app',
-    company: 'Freelance',
-    media: [
-      { type: 'image', src: lunaro_1 },
-      { type: 'image', src: lunaro_2 },
-      { type: 'image', src: lunaro_3 },
-    ],
-    description:
-      'A full-featured crypto wallet app that allows users to securely store, manage, and trade their cryptocurrencies. Integrates etherscan API to provide real-time market data, transaction history, and portfolio tracking. Includes coingecko API to provide users with up-to-date information on cryptocurrency prices, market trends, and news. Also wallet charts to visualize portfolio performance over time.',
-    technologies: ['TypeScript', 'React', 'Material UI', 'RainbowKit', 'Wagmi'],
   },
 ];
 
