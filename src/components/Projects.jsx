@@ -53,7 +53,8 @@ const Projects = ({ PROJECTS = [], Title, showYear = false }) => {
                     &#8592;
                   </button>
                 )}
-                {project.media[currentIndexes[projectIndex]].type === 'image' ? (
+                {project.media[currentIndexes[projectIndex]].type ===
+                'image' ? (
                   <img
                     src={project.media[currentIndexes[projectIndex]].src}
                     alt={project.title}
