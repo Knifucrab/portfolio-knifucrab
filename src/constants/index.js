@@ -14,10 +14,6 @@ import ldt3 from '../assets/projects/ldt3.webp';
 import ldt4 from '../assets/projects/ldt4.webp';
 import zento1 from '../assets/projects/zento1.webp';
 import zento2 from '../assets/projects/zento2.webp';
-import flights_1 from '../assets/projects/flights_1.webp';
-import flights_2 from '../assets/projects/flights_2.webp';
-import flights_3 from '../assets/projects/flights_3.webp';
-import flights_4 from '../assets/projects/flights_4.webp';
 import lunaro_1 from '../assets/projects/lunaro_wallet_1.webp';
 import lunaro_2 from '../assets/projects/lunaro_wallet_2.webp';
 import lunaro_3 from '../assets/projects/lunaro_wallet_3.webp';
@@ -27,40 +23,102 @@ import aizora_3 from '../assets/projects/aizora_3.png';
 import aizora_4 from '../assets/projects/aizora_4.png';
 import aizora_5 from '../assets/projects/aizora_5.png';
 import aizora_6 from '../assets/projects/aizora_6.png';
+import unstaLogo from '../assets/unsta.png';
+import utnLogo from '../assets/utn.png';
+import rollingCodeLogo from '../assets/rolling_code.png';
+import udemyLogo from '../assets/udemy.png';
+import truckersTalentLogo from '../assets/truckers_talent_logo.jpg';
+import visionApostolicaLogo from '../assets/visionapostolica_logo.ico';
+import aizoraLogo from '../assets/aizora_logo.jpg';
+import solidLogo from '../assets/solidfi_logo.jpg';
+import petsionLogo from '../assets/petsion_logo.ico';
 
-export const HERO_CONTENT = `React Native Mobile Developer. Software & Quality Development Technician from Tucuman, Argentina 🇦🇷. Specialized in the development of multiplatform mobile aplications.`;
+export const HERO_CONTENT = `Full Stack Developer with hands-on experience building and maintaining web applications using React, Node.js, Express, and SQL/NoSQL databases. Software Development and Quality Assurance Technician from San Miguel de Tucuman, Argentina 🇦🇷, with practical experience in agile teams (SCRUM), feature-driven development, production support, and incident resolution. Currently focused on growing in backend, data, process automation, and enterprise solutions.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
 export const EXPERIENCES = [
   {
-    year: 'August 2025 - Present',
-    role: 'Full-Stack Developer (Automation-Focused)',
-    company: 'Aizora',
-    description: `Developing automation-driven web solutions to enhance business workflows and customer interactions. Built custom frontends connected to n8n workflows and third-party APIs to streamline operations and integrate AI-powered services.`,
-    technologies: ['N8N', 'React', 'Node.js', 'Vercel', 'REST APIs'],
-  },
-  {
-    year: 'March 2025 - April 2025 (1 month)',
-    role: 'React Frontend Developer',
-    company: 'Church Vision Apostolica',
-    description: `Designed and developed a responsive one-page website for a local church to showcase their beliefs, events, and image gallery.`,
+    year: 'November 2025 - Present',
+    role: 'Full-Stack Developer & DevOps',
+    company: 'Truckers Talent Inc',
+    companyLink: 'https://www.truckerstalent.com',
+    companyLogo: truckersTalentLogo,
+    description:
+      'Designed and implemented backend and frontend features for a production platform. Built Stripe payment integrations including subscriptions, webhooks, state validation, and error handling. Implemented a complete affiliate system with business logic, tracking, and commissions. Contributed to infrastructure and deployments on DigitalOcean, worked with a modular architecture and REST APIs, and handled release operations including PR reviews/merges, production deploys, post-release monitoring, weekly hotfixes, and incident response.',
     technologies: [
       'React',
-      'Ant Design',
-      'Figma',
-      'Vercel',
-      'Google Cloud Services',
+      'Node.js',
+      'Express',
+      'REST APIs',
+      'Stripe',
+      'DigitalOcean',
+      'Git',
+      'CI/CD',
+      'PostgreSQL',
     ],
   },
   {
-    year: 'August 2024 - January 2025 (6 months)',
-    role: 'Front End Engineering Intern',
-    company: 'Solid',
-    description: `Collaborated in a team project as part of my final university coursework, with professors from multinational companies acting as real-world clients.`,
+    year: 'March 2025 - April 2025',
+    role: 'Full Stack Freelance Developer',
+    company: 'Institutional Web Freelance Client',
+    companyLink: 'https://visionapostolicaldt.vercel.app',
+    companyLogo: visionApostolicaLogo,
+    description:
+      'Built an institutional landing page and contributed to administrative flow planning based on client requirements. Designed user-friendly solutions focused on content management and easy administration.',
+    technologies: [
+      'React 18',
+      'TypeScript',
+      'Tailwind',
+      'EmailJS',
+      'Supabase',
+      'PostgreSQL',
+    ],
+  },
+  {
+    year: 'February 2026 - April 2026',
+    role: 'Full Stack Freelance Developer',
+    company: 'Institutional Web Freelance Client',
+    companyLink: 'https://dashboard-ldt-front.vercel.app',
+    companyLogo: visionApostolicaLogo,
+    description:
+      'Built a Trello-style administrative dashboard adapted to the client workflow. Implemented integrations for content and file management, and collaborated on data modeling and system structure for administrative operations.',
+    technologies: [
+      'React 18',
+      'TypeScript',
+      'Tailwind',
+      'EmailJS',
+      'Supabase',
+      'PostgreSQL',
+    ],
+  },
+  {
+    year: 'April 2025 - May 2025',
+    role: 'Full Stack Developer',
+    company: 'Aizora Landing Page',
+    companyLink: 'https://aizora.io',
+    companyLogo: aizoraLogo,
+    description:
+      'Built a marketing landing page with Calendly integration for booking meetings, 3D mobile mockups, dynamic language display based on the user country, and WhatsApp integration. Worked hand-in-hand with a UI designer to deliver a polished and conversion-focused experience.',
     technologies: [
       'React',
-      'Typescript',
+      'JavaScript',
+      'Calendly',
+      'WhatsApp API',
+      'Vercel',
+      'Responsive Design',
+    ],
+  },
+  {
+    year: 'August 2024 - November 2024 (3 months)',
+    role: 'Front End Engineering Intern',
+    company: 'Solid',
+    companyLogo: solidLogo,
+    description:
+      'Developed interfaces with React, TypeScript, and Next.js. Built reusable and responsive components, worked with Tailwind CSS and Material UI, and consumed APIs in a collaborative engineering environment.',
+    technologies: [
+      'React',
+      'TypeScript',
       'Next.js',
       'GitHub Actions',
       'Material UI (MUI)',
@@ -73,15 +131,18 @@ export const EXPERIENCES = [
     year: 'March 2024 - August 2024 (6 months)',
     role: 'Front End Developer',
     company: 'Petsion (Final University Project)',
-    description: `Collaborated in a team project as part of my final university coursework, with professors from multinational companies acting as real-world clients.`,
+    companyLink: 'https://petsion-front.vercel.app',
+    companyLogo: petsionLogo,
+    description:
+      'Collaborated in an agile team for a real-world university capstone project. Developed user-facing features, integrated REST APIs, and contributed to incremental product improvements.',
     technologies: [
       'React',
       'Bootstrap',
       'Redux',
-      'mongoDB',
+      'MongoDB',
       'Express',
       'SCRUM',
-      'REST API',
+      'REST APIs',
     ],
   },
 ];
@@ -198,20 +259,36 @@ export const REACT_PROJECTS = [
       'A full-featured crypto wallet app that allows users to securely store, manage, and trade their cryptocurrencies. Integrates etherscan API to provide real-time market data, transaction history, and portfolio tracking. Includes coingecko API to provide users with up-to-date information on cryptocurrency prices, market trends, and news. Also wallet charts to visualize portfolio performance over time.',
     technologies: ['TypeScript', 'React', 'Material UI', 'RainbowKit', 'Wagmi'],
   },
+];
+
+export const EDUCATION = [
   {
-    title: 'Google Flights Clone',
-    previewLink: 'https://google-flights-clone-olive.vercel.app',
-    company: 'Freelance',
-    media: [
-      { type: 'image', src: flights_1 },
-      { type: 'image', src: flights_2 },
-      { type: 'image', src: flights_3 },
-      { type: 'image', src: flights_4 },
-      // { type: 'video', src: 'https://www.youtube.com/embed/exampleVideoID' },
-    ],
-    description:
-      'A full-featured flight search and reservation web app inspired by Google Flights. Integrates with a public flights API to provide real-time flight data, booking capabilities, and personalized recommendations. Includes advanced filtering options to help users find the best deals and save money on flights, as well as suggestions for alternative dates and routes.',
-    technologies: ['HTML', 'CSS', 'React', 'MongoDB', 'Redux', 'REST'],
+    title: 'Software Development and Quality Assurance Technician',
+    institution: 'Universidad Santo Tomas de Aquino',
+    period: '2022 - 2024',
+    logoAlt: 'Universidad Santo Tomas de Aquino logo',
+    logo: unstaLogo,
+  },
+  {
+    title: 'Logistics Technician Program',
+    institution: 'Higher Education Program',
+    period: '2026 - 2028',
+    logoAlt: 'Logistics program institution logo',
+    logo: utnLogo,
+  },
+  {
+    title: 'Full Stack Web Developer Program',
+    institution: 'Rolling Code',
+    period: 'Completed',
+    logoAlt: 'Rolling Code logo',
+    logo: rollingCodeLogo,
+  },
+  {
+    title: 'React Native Course',
+    institution: 'Udemy',
+    period: 'Completed',
+    logoAlt: 'Udemy logo',
+    logo: udemyLogo,
   },
 ];
 

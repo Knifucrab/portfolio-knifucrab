@@ -12,7 +12,7 @@ const Hero = () => {
           </h2>
           <span className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tight text-transparent">
             {' '}
-            Front End Developer
+            Full Stack Developer
           </span>
           <p className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter">
             {HERO_CONTENT}
