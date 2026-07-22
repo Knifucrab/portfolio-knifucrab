@@ -39,7 +39,7 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
   {
-    year: 'November 2025 - Present',
+    year: 'July 2025 - June 2026',
     role: 'Full-Stack Developer & DevOps',
     company: 'Truckers Talent Inc',
     companyLink: 'https://www.truckerstalent.com',
@@ -93,9 +93,10 @@ export const EXPERIENCES = [
     ],
   },
   {
-    year: 'April 2025 - May 2025',
+    year: 'April 2026 - July 2025',
     role: 'Full Stack Developer',
-    company: 'Aizora Landing Page',
+    company:
+      'Aizora Landing Page & Administrative IA Dashboard for Restaurants',
     companyLink: 'https://aizora.io',
     companyLogo: aizoraLogo,
     description:
@@ -110,7 +111,7 @@ export const EXPERIENCES = [
     ],
   },
   {
-    year: 'August 2024 - November 2024 (3 months)',
+    year: 'August 2024 - January 2025 (6 months)',
     role: 'Front End Engineering Intern',
     company: 'Solid',
     companyLogo: solidLogo,
